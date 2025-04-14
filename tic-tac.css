@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background:url("bag.jpg");
+    text-align: center;
+    background:cover;
+    
+}
+
+.container {
+    /* margin-top: 10px; */
+    height: 70vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game {
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+
+}
+
+.box {
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+    font-size: 8vmin;
+    color: crimson;
+    background-color: cornsilk;
+}
+
+#reset {
+    background-color: black;
+    color: white;
+    font-size: 1.25rem;
+    padding: 0.7rem;
+    border-radius: 1rem;
+    border: none;
+}
+#newBtn{
+    margin-top: 10px;
+    background-color: black;
+    color: white;
+    font-size: 1.25rem;
+    padding: 0.7rem;
+    border-radius: 1rem;
+    border: none;
+}
+#msg{
+    color:rgb(171, 15, 119);
+    font-size: 5vmin;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.msg{
+    height:20vmin;
+}
+.hide{
+    display: none;
+}
