@@ -9,12 +9,12 @@ function resetBtn() {
     turn = true;
     enableB();
     msgContainer.classList.add('hide');
-    
+
 }
 boxes.forEach((box) => {
     box.addEventListener('click', () => {
         console.log('box was clicked');
-        
+
         if (turn) {
             box.innerText = 'X';
             turn = false;
