@@ -17,6 +17,7 @@ boxes.forEach((box) => {
 
         if (turn) {
             box.innerText = 'X';
+            box.style.color = "gold";
             turn = false;
         } else {
             box.innerText = 'O';
