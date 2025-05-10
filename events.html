@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .dark{
+        background-color: black;
+    }
+    .light{
+        background-color: white;
+    }
+</style>
+<body>
+    <button id="mode" >MODE</button>
+  <script>
+    //******Task******: Toggle button for dark and light mode
+//     let currMode='light';
+// let m=document.querySelector('#mode');
+// m.addEventListener('click',()=>{
+//     let body=document.querySelector('body');
+//     if(currMode=='light'){
+// currMode='dark';
+// body.style.backgroundColor='black';}
+// else{
+//     currMode='light';
+//     body.style.backgroundColor='white';
+// }
+// console.log(currMode);
+// })
+
+//Same task USing classes
+    let currMode='light';
+let m=document.querySelector('#mode');
+m.addEventListener('click',()=>{
+    let body=document.querySelector('body');
+    if(currMode=='light'){
+currMode='dark';
+body.setAttribute('class','dark');}
+else{
+    currMode='light';
+    body.setAttribute('class','light')
+}
+console.log(currMode);
+})
+    //Event:change in state of an object isknown as event
+    //Priority of JS handling is greater than inline handling
+    // node.event= ()=>{
+    //     //handle here
+    // } 
+
+    // //Event object:special object that has details abt the event.all event handlers have access to event object's properties
+    // node.event= (e)=>{//here e- event object
+    //     //handle here
+    //     console.log(e);
+    //     console.log(e.type);//type is property
+
+    // } 
+
+    // //Event listener
+    // node.addEventListener('click',(e)=>{
+    //     //callback function
+    // })
+    // node.removeEventListener('click',//callback function reference should be same to remove (for this you will have to make a function seperate and store it by its name)
+    // )
+    // eg:
+    // const handl3=()=>{
+    //     console.log('This is function');
+    // }
+    // node.addEventListener('click',handl3);
+    // node.removeEventListener('click',handl3)
+</script>
+
+</body>
+</html>

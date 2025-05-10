@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .p1{
+background-color:pink;
+        }
+        .para{
+            color:blueviolet; font-weight:bold;font-size: larger
+        }
+    </style>
+</head>
+<body>
+   
+<h2>hi Javascript</h2>
+<div class="box">1</div>
+<p class="para">Here wwe aree!!!!</p>
+
+    <script>
+        //Window object:represents open windw in browser.It is browser's object and automatically created by the browser so we can also write 
+        //window.alert('hi')
+        
+        //DOM:When a web page is loaded,browser creates a DOM of page
+        //console.dir:prints object's like document's properties and methods
+        
+        //Query selector returns nodelist for us.
+        //3 types of nodes:-text,comment,element
+        
+        //DOM Manipulation properties:
+        /*
+        1.tagName
+        2.innerText
+        3.innerHTML
+        4.textContent
+        */
+    //    let a=document.querySelector('h2')
+    //    a.innerText=a.innerText+" from apna college";
+    //    console.log(a.innerText);
+    //    let divs=document.querySelectorAll('.box');
+    //    console.dir(divs);
+
+    //DOM Manipulation
+    // Attributes:-
+    // getAttribute(Attr)//to get attribute value
+    // for eg:
+    // let div=document.querySelector('div');
+    // console.log(div);
+    // let cls=div.getAttribute('class');
+    // console.log(cls);
+    // console.log(div.setAttribute('class','piii'));
+   
+    // setAttribute(Attr,value); //to set attribute value(overrides all styles)
+    //node.classList.remove('this class')
+    //node.classList.add('another class')
+    // Style:-
+    // node.Style eg: div.style.backgroundColor='red';
+
+    //Insert Elements:
+   // node.append(el)//adds at end of node(inside)
+    // let newbtn=document.createElement('button');
+    // newbtn.innerText='click me!';
+    // let div=document.querySelector('div');
+    // div.append(newbtn);
+    // div.prepend(newbtn)
+    // node.prepend(el)//adds at start of node (inside)
+    // node.before(el)//adds before node(outside)
+    // node.after(el)//adds after node(outside)
+//Deleting elements
+// node.remove();
+// eg-
+// let head=document.querySelector('h2');
+
+// head.remove()
+
+/* ******TASK1******
+let newbtn=document.createElement('button');
+newbtn.innerText='click me!';
+newbtn.style.backgroundColor='red'
+newbtn.style.textDecorationColor='white';
+let bodyy=document.querySelector('body');
+bodyy.prepend(newbtn);
+*/
+/* *****TASK2*****
+let para=document.querySelector('p');
+console.log(para.getAttribute('class'));
+// para.setAttribute('class','p1');
+console.log(para.classList);
+para.classList.add('p1');
+*/
+
+        
+        </script>
+        
+</body>
+</html>

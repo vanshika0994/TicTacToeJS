@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script> 
+//PROPERTY:it is variable associated with an object,holds info or data
+//METHOD:function associated with object,define action or behavior of object
+
+//Arrays are mutable
+//          let arr=[250,645,300,900,50];
+//          let arr1=[];
+// for(let i=0;i<arr.length;i++){
+//     arr1[i]=arr[i]-0.1*arr[i];
+// }
+//USing for of loop
+/*for(let i of arr){
+    arr1[p]=arr[p]-0.1*arr[p];
+    p++;
+}*/
+// console.log(arr1);
+
+//converting array into string using toString()
+// let items=['mango','apple','kiwi','litchi'];
+// console.log(items.toString());
+
+//slice-return piece of array : slice(startindx,endindx);
+//splice:changes original array:splice(Start,delCount,newele...)||(add,remove,replace)
+//shift:removes first element;
+//unshift:adds element at index 0;
+
+//Practice Ques
+let companies=["Bloomberg","Microsoft","Uber","Google","IBM","Netflix"];
+// console.log(companies.shift);
+// console.log(companies);
+companies.splice(2,1,'Ola');
+console.log(companies);
+companies.push('Amazon');
+console.log(companies);
+
+
+    </script>
+</body>
+</html>

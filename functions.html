@@ -1,0 +1,90 @@
+<script>
+    // let str='hi';
+    // console.log(str);
+//     function vowel(str){
+//         let count=0
+//         for(let i of str){
+        
+//             i=i.toLowerCase();
+//             if(i=='a'||i=='e'||i=='o'||i=='i'||i=='u'){
+// count++;
+//             }
+//      }
+//      return count;
+
+//         }
+
+//Arrow function
+// let vowel=(str)=>{
+//         let count=0
+//         for(let i of str){
+        
+//             i=i.toLowerCase();
+//             if(i=='a'||i=='e'||i=='o'||i=='i'||i=='u'){
+// count++;
+//             }
+//      }
+//      return count;
+
+//         }
+
+//         //forEach loop
+//      let arr=[1,2,3,4];
+//         arr.forEach((val)=>{
+//             console.log(val);
+//         }
+//     )
+// arr.forEach((i)=>{
+//    console.log(i*i);
+// });
+
+    //Higher order function/methods:those who take function as a parameter inside them or who return function as their output
+
+    //Array Methods
+    /*
+    1>Map: creates new array with result of some operation.value its callback returns are used to form new array
+    arr.map(callback func(value,index,array))
+    let newArr=arr.map((val)=>{
+    return val*2;
+        }
+        
+    2>Filter:creates new array of elements that give true for a condition/filter.eg-all even elements
+    eg:
+    let newArr-arr.filter((val)=>{
+    return val%2==0;})
+
+    3>Reduce:performs operations and reduce array to single value and returns single value.
+    eg:
+    const output=arr.reduce((prev,current)=>
+{
+    return rev+current;
+    })
+    console.log(output);
+    )
+    */
+
+   //Ques-1
+   /* let marks=[98,90,91,88,80,99];
+    let greater=marks.filter((val)=>{
+        return val>90;
+    })
+    console.log(greater);*/
+    //Ques2
+    let n=parseInt(prompt("Enter number: "));
+    let arr=[];
+    for(let i=0;i<n;i++){
+        arr[i]=parseInt(prompt("Enter"+i+"element"));
+    };
+    console.log(arr);
+   const output=arr.reduce((prev,curr)=>{
+        return prev+curr;
+    })
+
+    console.log("Sum is:"+output);
+    const product=arr.reduce((prev,curr)=>{
+        return prev*curr;
+    })
+    
+    console.log("PRoduct is: "+product);
+
+</script>
